@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="2DF9CA30-1D2C-5250-1E39-B75F67CFAAB7" schemaObject="8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9" name="VW_PRESET">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>VW_PRESET</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE OR REPLACE VIEW VW_PRESET
+AS 
+select prs.preset_name, st.stock_name
+from preset prs, stock st, preset_list prl
+where prs.preset_id = prl.preset_id and prl.stock_id = st.stock_id]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PRESET_NAME" id="CD118195-F760-F42A-6C69-BBA9E7B9028B">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>VW_PRESET</sourceObjSchema>
+<sourceObjName>PRESET_NAME</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PRESET_NAME</alias>
+<dataType>VARCHAR2 (60 BYTE)</dataType>
+<headerAlias>PRESET_NAME</headerAlias>
+<reference>false</reference>
+<referencedColumn>48F2CAB0-B78F-736E-C9D0-92332898C59E</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="STOCK_NAME" id="DE97FEBB-2AF5-8B88-6DB7-F92CB69545F1">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>VW_PRESET</sourceObjSchema>
+<sourceObjName>STOCK_NAME</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>STOCK_NAME</alias>
+<dataType>VARCHAR2 (30 BYTE)</dataType>
+<headerAlias>STOCK_NAME</headerAlias>
+<reference>false</reference>
+<referencedColumn>6307F8F3-3FE0-26F4-397C-22972DA0C369</referencedColumn>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1764A131-14AD-FF8C-4F11-82033FA1A3B6">
+<container>true</container>
+<schema>YEOL</schema>
+<tableName>PRESET</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="58CA7C07-F395-A037-8F72-D46665E503F3">
+<container>true</container>
+<schema>YEOL</schema>
+<tableName>STOCK</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8BCA3114-DE07-0152-93CB-00561C0DCE11">
+<container>true</container>
+<schema>YEOL</schema>
+<tableName>PRESET_LIST</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="48F2CAB0-B78F-736E-C9D0-92332898C59E">
+<columnName>PRESET_NAME</columnName>
+<schema>YEOL</schema>
+<tableName>PRESET</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6307F8F3-3FE0-26F4-397C-22972DA0C369">
+<columnName>STOCK_NAME</columnName>
+<schema>YEOL</schema>
+<tableName>STOCK</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B0DF1E3F-10BC-D438-4AE2-FB0EDEA4D7D7">
+<columnName>PRESET_ID</columnName>
+<schema>YEOL</schema>
+<tableName>PRESET_LIST</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1AACFF2C-FCEC-D2A5-55BC-123E9CD83C47">
+<columnName>STOCK_ID</columnName>
+<schema>YEOL</schema>
+<tableName>PRESET_LIST</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="10EFAA90-B622-6697-5458-31B393F5A87E">
+<columnName>PRESET_ID</columnName>
+<schema>YEOL</schema>
+<tableName>PRESET</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FA9A966D-C440-B59E-F892-D49CC0A91277">
+<columnName>STOCK_ID</columnName>
+<schema>YEOL</schema>
+<tableName>STOCK</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

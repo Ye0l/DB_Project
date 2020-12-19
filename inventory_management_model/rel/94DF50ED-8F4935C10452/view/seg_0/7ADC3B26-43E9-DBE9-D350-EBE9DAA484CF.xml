@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="7ADC3B26-43E9-DBE9-D350-EBE9DAA484CF" schemaObject="8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9" name="VW_QTT">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>VW_QTT</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE OR REPLACE VIEW VW_QTT
+AS 
+select st.stock_id, nvl(sum(sp.quantity),0) - nvl(sum(rl.release_quantity),0) as "sumqtt"
+from supply sp left outer join stock st 
+on sp.stock_id = st.stock_id
+left outer join release rl
+on st.stock_id = rl.stock_id
+group by st.stock_id]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="STOCK_ID" id="4A18BB0C-670E-8BDF-9A4C-67DBD2FCB074">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>VW_QTT</sourceObjSchema>
+<sourceObjName>STOCK_ID</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>STOCK_ID</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>STOCK_ID</headerAlias>
+<reference>false</reference>
+<referencedColumn>FA9A966D-C440-B59E-F892-D49CC0A91277</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="sumqtt" id="73F94A62-DFD9-E3A7-BAC6-50F2AD436E10">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>VW_QTT</sourceObjSchema>
+<sourceObjName>sumqtt</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>sumqtt</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>sumqtt</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B12A9EDB-C572-859D-0473-B5139CF1159E">
+<container>true</container>
+<schema>YEOL</schema>
+<tableName>SUPPLY</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="58CA7C07-F395-A037-8F72-D46665E503F3">
+<container>true</container>
+<schema>YEOL</schema>
+<tableName>STOCK</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F600AAC4-2652-13C9-0AB0-AAB06EC096AD">
+<container>true</container>
+<schema>YEOL</schema>
+<tableName>RELEASE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FA9A966D-C440-B59E-F892-D49CC0A91277">
+<columnName>STOCK_ID</columnName>
+<schema>YEOL</schema>
+<tableName>STOCK</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D005DE2B-A64C-53BF-3A76-0CAEFB52E870">
+<columnName>STOCK_ID</columnName>
+<schema>YEOL</schema>
+<tableName>RELEASE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="791BC225-5B64-5008-0900-25562270AAF3">
+<columnName>QUANTITY</columnName>
+<schema>YEOL</schema>
+<tableName>SUPPLY</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="72E97407-1D4C-3693-4CEE-3CEB3D9AB66E">
+<columnName>STOCK_ID</columnName>
+<schema>YEOL</schema>
+<tableName>SUPPLY</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6B158684-4BB3-134E-22CA-F31B0ABC1AAF">
+<columnName>RELEASE_QUANTITY</columnName>
+<schema>YEOL</schema>
+<tableName>RELEASE</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

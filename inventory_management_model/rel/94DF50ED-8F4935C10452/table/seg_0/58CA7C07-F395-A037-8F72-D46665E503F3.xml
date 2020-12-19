@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="58CA7C07-F395-A037-8F72-D46665E503F3" schemaObject="8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9" name="STOCK">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>STOCK</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STOCK_ID" id="FA9A966D-C440-B59E-F892-D49CC0A91277">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>STOCK</sourceObjSchema>
+<sourceObjName>STOCK_ID</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STOCK_NAME" id="6307F8F3-3FE0-26F4-397C-22972DA0C369">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>STOCK</sourceObjSchema>
+<sourceObjName>STOCK_NAME</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STOCK_COST" id="53FCC169-6D23-0BDB-A5E8-021FDB439F7F">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>STOCK</sourceObjSchema>
+<sourceObjName>STOCK_COST</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STOCK_DIVISION" id="6DA10699-D04D-2482-CD90-08DDCFAAE6D0">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>STOCK</sourceObjSchema>
+<sourceObjName>STOCK_DIVISION</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<constraintName>DIVISION_CHECK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;goods&apos;" description=""/>
+<valueDef value="&apos;material&apos;" description=""/>
+<valueDef value="&apos;product&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STOCK_SALEPRICE" id="A554B197-3E58-604D-0A82-A87C885E37F3">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>STOCK</sourceObjSchema>
+<sourceObjName>STOCK_SALEPRICE</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B5C7836E-7609-7650-154D-4BA3745960D8" name="TB_STOCK_ID_PK">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>TB_STOCK_ID_PK</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA9A966D-C440-B59E-F892-D49CC0A91277"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="889A7D83-27C9-834D-C2ED-FCCABAC78EB2" schemaObject="8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9" name="TB_STOCK_ID_PK">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>TB_STOCK_ID_PK</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA9A966D-C440-B59E-F892-D49CC0A91277"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

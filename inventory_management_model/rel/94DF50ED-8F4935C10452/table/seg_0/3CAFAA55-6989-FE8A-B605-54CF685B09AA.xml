@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3CAFAA55-6989-FE8A-B605-54CF685B09AA" schemaObject="8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9" name="ACCOUNT">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>ACCOUNT</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ACC_ID" id="8353FBD3-AF55-17FC-CE39-6BF94F3DE226">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>ACC_ID</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACC_PW" id="942609B5-0D5D-3F09-73D4-EC5020705D56">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>ACC_PW</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACC_NAME" id="EBC1EC26-C842-BA36-E8FA-6A76D450DD3A">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>ACC_NAME</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACC_POSITION" id="27C6EBA7-CD2C-5067-E506-2E12DEB9D5FD">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>ACC_POSITION</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACC_AUTH" id="0EC995C0-1B36-FD98-343A-54605E70D2FF">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>ACCOUNT</sourceObjSchema>
+<sourceObjName>ACC_AUTH</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>9</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5C9A940C-2D1E-A047-560C-C17252BD942B" name="TB_ACCOUNT_ID_PK">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>TB_ACCOUNT_ID_PK</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8353FBD3-AF55-17FC-CE39-6BF94F3DE226"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0678198C-E42B-1C79-02B4-B47328F042BA" schemaObject="8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9" name="TB_ACCOUNT_ID_PK">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>TB_ACCOUNT_ID_PK</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8353FBD3-AF55-17FC-CE39-6BF94F3DE226"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

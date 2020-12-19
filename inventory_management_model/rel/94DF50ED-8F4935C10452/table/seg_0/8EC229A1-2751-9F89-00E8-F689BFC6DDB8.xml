@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8EC229A1-2751-9F89-00E8-F689BFC6DDB8" schemaObject="8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9" name="PRODUCT">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>PRODUCT</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRODUCT_ID" id="8AC32EE7-EE3C-5EE5-18DA-6524085FBD6C">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>PRODUCT</sourceObjSchema>
+<sourceObjName>PRODUCT_ID</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65820B4D-ADB1-8754-3356-1E3E7EC85D02" referredColumn="35E3CE42-623D-B983-C08A-F934CC128404"/>
+</associations>
+</Column>
+<Column name="MATERIAL_ID" id="1964FEC6-8805-A0E9-BE61-D2B3A6931768">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>PRODUCT</sourceObjSchema>
+<sourceObjName>MATERIAL_ID</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5D2719EE-DB18-38E7-FED1-1A92D7C82DCF" referredColumn="B619367A-3601-3A68-CE45-7AD08388BDF1"/>
+</associations>
+</Column>
+<Column name="MADE_QUANTITY" id="E013268D-2BC1-715E-AE10-92515DDB6F3C">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>PRODUCT</sourceObjSchema>
+<sourceObjName>MADE_QUANTITY</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B5F5633D-7EFF-AB60-CA74-8504DDF8C1C8" name="TB_PRODUCT_MATERIAL_ID_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:02 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1964FEC6-8805-A0E9-BE61-D2B3A6931768"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27564B71-62C2-CC65-7222-2C1A3ED7842B" name="TB_PRODUCT_PRODUCT_ID_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:02 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8AC32EE7-EE3C-5EE5-18DA-6524085FBD6C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

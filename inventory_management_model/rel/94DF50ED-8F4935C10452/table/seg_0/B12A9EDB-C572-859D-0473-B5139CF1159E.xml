@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B12A9EDB-C572-859D-0473-B5139CF1159E" schemaObject="8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9" name="SUPPLY">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>SUPPLY</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STOCK_ID" id="72E97407-1D4C-3693-4CEE-3CEB3D9AB66E">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>SUPPLY</sourceObjSchema>
+<sourceObjName>STOCK_ID</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="598D0DB8-EB07-12A3-306F-814CBB439758" referredColumn="FA9A966D-C440-B59E-F892-D49CC0A91277"/>
+</associations>
+</Column>
+<Column name="MFR_NAME" id="D5C6D9B2-C2DF-B880-D016-E974EEE75705">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>SUPPLY</sourceObjSchema>
+<sourceObjName>MFR_NAME</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1F5B7DB9-2208-C509-173D-8FF4878BB8FE" referredColumn="84C45C60-3EE8-9CC5-273F-3D45F0809734"/>
+</associations>
+</Column>
+<Column name="SUPPLY_DATE" id="16161596-8874-75A5-4F4D-FFF16D8C2C47">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>SUPPLY</sourceObjSchema>
+<sourceObjName>SUPPLY_DATE</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>sysdate</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUANTITY" id="791BC225-5B64-5008-0900-25562270AAF3">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>SUPPLY</sourceObjSchema>
+<sourceObjName>QUANTITY</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BB5A54DD-A63B-EAC7-22E7-B918C2D2D475" name="SUPPLY_MFR_NAME_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:02 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5C6D9B2-C2DF-B880-D016-E974EEE75705"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="548FB668-D140-234D-3E34-FB625F3E9DC3" name="SUPPLY_STOCK_ID_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:02 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72E97407-1D4C-3693-4CEE-3CEB3D9AB66E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

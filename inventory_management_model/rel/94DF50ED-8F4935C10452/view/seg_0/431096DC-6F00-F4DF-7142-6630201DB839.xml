@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="431096DC-6F00-F4DF-7142-6630201DB839" schemaObject="8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9" name="VW_MATERIAL_COST">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>VW_MATERIAL_COST</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE OR REPLACE VIEW VW_MATERIAL_COST
+AS 
+select prd.product_id, prd.material_id, st.stock_cost * prd."필요수량" as material_cost
+from stock st, vw_product prd
+where st.stock_id = prd.material_id]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PRODUCT_ID" id="B058A0DF-8F75-D6FC-FDC4-3B98617DCD7B">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>VW_MATERIAL_COST</sourceObjSchema>
+<sourceObjName>PRODUCT_ID</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PRODUCT_ID</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>PRODUCT_ID</headerAlias>
+<reference>false</reference>
+<referencedColumnViewID>3DFBE10B-A356-CEC4-B8D3-6EA84CE31DE9</referencedColumnViewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="MATERIAL_ID" id="A8EEB071-3C3D-8079-274C-DA0C93D90711">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>VW_MATERIAL_COST</sourceObjSchema>
+<sourceObjName>MATERIAL_ID</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>MATERIAL_ID</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>MATERIAL_ID</headerAlias>
+<reference>false</reference>
+<referencedColumnViewID>AD252FAB-1C27-6387-6492-F8DA04EA6AD6</referencedColumnViewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="MATERIAL_COST" id="72AECF39-ACA1-5306-BFE1-E6828B1F9761">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>VW_MATERIAL_COST</sourceObjSchema>
+<sourceObjName>MATERIAL_COST</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>MATERIAL_COST</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>MATERIAL_COST</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="58CA7C07-F395-A037-8F72-D46665E503F3">
+<container>true</container>
+<schema>YEOL</schema>
+<tableName>STOCK</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FC16DFDF-10C7-159F-F237-BA76C1719F64">
+<container>true</container>
+<schema>YEOL</schema>
+<tableName>VW_PRODUCT</tableName>
+<view>true</view>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3DFBE10B-A356-CEC4-B8D3-6EA84CE31DE9">
+<columnName>PRODUCT_ID</columnName>
+<schema>YEOL</schema>
+<tableName>VW_PRODUCT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="AD252FAB-1C27-6387-6492-F8DA04EA6AD6">
+<columnName>MATERIAL_ID</columnName>
+<schema>YEOL</schema>
+<tableName>VW_PRODUCT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="EE41CA96-73AC-5962-A5AE-4789E8BB4C50">
+<columnName>필요수량</columnName>
+<schema>YEOL</schema>
+<tableName>VW_PRODUCT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="53FCC169-6D23-0BDB-A5E8-021FDB439F7F">
+<columnName>STOCK_COST</columnName>
+<schema>YEOL</schema>
+<tableName>STOCK</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FA9A966D-C440-B59E-F892-D49CC0A91277">
+<columnName>STOCK_ID</columnName>
+<schema>YEOL</schema>
+<tableName>STOCK</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

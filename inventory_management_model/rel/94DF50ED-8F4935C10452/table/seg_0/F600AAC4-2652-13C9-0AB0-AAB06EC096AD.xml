@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F600AAC4-2652-13C9-0AB0-AAB06EC096AD" schemaObject="8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9" name="RELEASE">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>RELEASE</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STOCK_ID" id="D005DE2B-A64C-53BF-3A76-0CAEFB52E870">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>RELEASE</sourceObjSchema>
+<sourceObjName>STOCK_ID</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E30DCD0-5144-6A16-3698-79D5E083EB49" referredColumn="FA9A966D-C440-B59E-F892-D49CC0A91277"/>
+</associations>
+</Column>
+<Column name="RELEASE_QUANTITY" id="6B158684-4BB3-134E-22CA-F31B0ABC1AAF">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>RELEASE</sourceObjSchema>
+<sourceObjName>RELEASE_QUANTITY</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RELEASE_DATE" id="895DFC90-9D16-F07A-4AC8-893E04001864">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>RELEASE</sourceObjSchema>
+<sourceObjName>RELEASE_DATE</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>sysdate</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C93D29C5-A45E-7E0B-F439-8E33EFD833FF" name="RELEASE_STOCK_ID_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:02 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D005DE2B-A64C-53BF-3A76-0CAEFB52E870"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

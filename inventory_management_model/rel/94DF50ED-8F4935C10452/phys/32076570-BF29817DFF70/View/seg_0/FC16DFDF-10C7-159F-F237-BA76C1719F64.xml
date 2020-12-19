@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableViewProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableViewProxyOraclev10g" name="VW_PRODUCT" directorySegmentName="seg_0" id="FC16DFDF-10C7-159F-F237-BA76C1719F64">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<schemaObject>8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9</schemaObject>
+</TableViewProxyOraclev10g>

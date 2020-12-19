@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="E0C295B8-9459-F061-BF8E-F650CF02B575" schemaObject="8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9" name="VW_PRODUCT_COST">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>VW_PRODUCT_COST</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE OR REPLACE VIEW VW_PRODUCT_COST
+AS 
+select pmc.product_id, sum(pmc.material_cost) as material_sum
+from stock st, vw_material_cost pmc
+where st.stock_id = pmc.product_id
+group by pmc.product_id]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PRODUCT_ID" id="D76D7B37-932C-751A-A1BF-DEB9E673E45C">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>VW_PRODUCT_COST</sourceObjSchema>
+<sourceObjName>PRODUCT_ID</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PRODUCT_ID</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>PRODUCT_ID</headerAlias>
+<reference>false</reference>
+<referencedColumnViewID>B058A0DF-8F75-D6FC-FDC4-3B98617DCD7B</referencedColumnViewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="MATERIAL_SUM" id="A3ED926B-BAB8-9802-6C15-BE07C6C0E19A">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>VW_PRODUCT_COST</sourceObjSchema>
+<sourceObjName>MATERIAL_SUM</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>MATERIAL_SUM</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>MATERIAL_SUM</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="58CA7C07-F395-A037-8F72-D46665E503F3">
+<container>true</container>
+<schema>YEOL</schema>
+<tableName>STOCK</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="431096DC-6F00-F4DF-7142-6630201DB839">
+<container>true</container>
+<schema>YEOL</schema>
+<tableName>VW_MATERIAL_COST</tableName>
+<view>true</view>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B058A0DF-8F75-D6FC-FDC4-3B98617DCD7B">
+<columnName>PRODUCT_ID</columnName>
+<schema>YEOL</schema>
+<tableName>VW_MATERIAL_COST</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="72AECF39-ACA1-5306-BFE1-E6828B1F9761">
+<columnName>MATERIAL_COST</columnName>
+<schema>YEOL</schema>
+<tableName>VW_MATERIAL_COST</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FA9A966D-C440-B59E-F892-D49CC0A91277">
+<columnName>STOCK_ID</columnName>
+<schema>YEOL</schema>
+<tableName>STOCK</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

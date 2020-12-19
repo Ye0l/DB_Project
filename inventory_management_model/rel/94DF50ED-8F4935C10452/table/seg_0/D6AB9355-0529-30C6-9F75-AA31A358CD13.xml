@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D6AB9355-0529-30C6-9F75-AA31A358CD13" schemaObject="8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9" name="STOCK_MATERIAL">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>STOCK_MATERIAL</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MATERIAL_ID" id="B619367A-3601-3A68-CE45-7AD08388BDF1">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>STOCK_MATERIAL</sourceObjSchema>
+<sourceObjName>MATERIAL_ID</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01C97F3A-C56A-CFB7-2949-1BD6B49E8E2F" referredColumn="FA9A966D-C440-B59E-F892-D49CC0A91277"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C1F8DE90-BD31-7B66-9489-C599A046F859" name="STOCK_MATERIAL_PK">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>STOCK_MATERIAL_PK</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B619367A-3601-3A68-CE45-7AD08388BDF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01C7D45A-47AA-37C7-E575-D50AF64A7BF6" schemaObject="8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9" name="STOCK_MATERIAL_PK">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>STOCK_MATERIAL_PK</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B619367A-3601-3A68-CE45-7AD08388BDF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFDFE33B-25F4-5B51-1470-7BFA27DBFCD1" name="STOCK_MATERIAL_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:02 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B619367A-3601-3A68-CE45-7AD08388BDF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

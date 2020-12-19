@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8BCA3114-DE07-0152-93CB-00561C0DCE11" schemaObject="8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9" name="PRESET_LIST">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>PRESET_LIST</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRESET_ID" id="B0DF1E3F-10BC-D438-4AE2-FB0EDEA4D7D7">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>PRESET_LIST</sourceObjSchema>
+<sourceObjName>PRESET_ID</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="29525CBA-1AC4-EF66-B7F3-A06DB36FBDF4" referredColumn="10EFAA90-B622-6697-5458-31B393F5A87E"/>
+</associations>
+</Column>
+<Column name="STOCK_ID" id="1AACFF2C-FCEC-D2A5-55BC-123E9CD83C47">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>PRESET_LIST</sourceObjSchema>
+<sourceObjName>STOCK_ID</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="92497B79-AD4D-366C-DB13-B78150253A38" referredColumn="FA9A966D-C440-B59E-F892-D49CC0A91277"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89F0CC62-5D80-6944-C108-D87B0D1DE6D0" name="PRESET_LIST_PRESET_ID_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:02 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0DF1E3F-10BC-D438-4AE2-FB0EDEA4D7D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4D2A0EA-E9CB-C6EA-DD34-B93A39D4506A" name="PRESET_LIST_STOCK_ID_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:02 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AACFF2C-FCEC-D2A5-55BC-123E9CD83C47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

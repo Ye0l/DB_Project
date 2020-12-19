@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="ACCOUNT" directorySegmentName="seg_0" id="3CAFAA55-6989-FE8A-B605-54CF685B09AA">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<schemaObject>8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>60969ECF-BC64-C666-88FB-56EB2C5152BE</segment>
+<tableSpace>BF7047EB-5D73-A447-0F60-4A2EB797AE3A</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ACC_AUTH" id="0EC995C0-1B36-FD98-343A-54605E70D2FF">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<defaultValue>9</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ACC_POSITION" id="27C6EBA7-CD2C-5067-E506-2E12DEB9D5FD">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACC_ID" id="8353FBD3-AF55-17FC-CE39-6BF94F3DE226">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACC_PW" id="942609B5-0D5D-3F09-73D4-EC5020705D56">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACC_NAME" id="EBC1EC26-C842-BA36-E8FA-6A76D450DD3A">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="TB_ACCOUNT_ID_PK" id="0678198C-E42B-1C79-02B4-B47328F042BA">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<schemaObject>8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9</schemaObject>
+<segment>56840F66-3D96-3B64-5E6D-01984FC65549</segment>
+<tableSpace>BF7047EB-5D73-A447-0F60-4A2EB797AE3A</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TB_ACCOUNT_ID_PK" id="5C9A940C-2D1E-A047-560C-C17252BD942B">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<segment>56840F66-3D96-3B64-5E6D-01984FC65549</segment>
+<tableSpace>BF7047EB-5D73-A447-0F60-4A2EB797AE3A</tableSpace>
+<existingIndex>0678198C-E42B-1C79-02B4-B47328F042BA</existingIndex>
+<indexSegment>56840F66-3D96-3B64-5E6D-01984FC65549</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

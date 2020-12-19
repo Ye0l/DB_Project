@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="STOCK_DIV_CLASSIFICATION" directorySegmentName="seg_0" id="902E74F0-21EF-CD9D-C960-3ADBEB4F5E82">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>STOCK_DIV_CLASSIFICATION</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:02 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<actions>INSERT, UPDATE, DELETE</actions>
+<body><![CDATA[begin
+    if inserting then -- 추가할때
+        if :new.stock_division = 'product' then
+            insert into stock_product
+            values(:new.stock_id);
+        end if;
+        if :new.stock_division = 'material' then
+            insert into stock_material
+            values(:new.stock_id);
+        end if;
+        if :new.stock_division = 'goods' then
+            insert into stock_goods
+            values(:new.stock_id);
+        end if;
+    end if;
+    if updating then -- 업데이트할때
+        if :new.stock_division = 'product' then
+            if :old.stock_division = 'material' then
+                delete from stock_material where material_id = :new.stock_id;
+                insert into stock_product values(:new.stock_id);
+            elsif :old.stock_division = 'goods' then
+                delete from stock_goods where goods_id = :new.stock_id;
+                insert into stock_product values(:new.stock_id);
+            end if;
+        end if;
+        if :new.stock_division = 'material' then
+            if :old.stock_division = 'product' then
+                delete from stock_product where product_id = :new.stock_id;
+                insert into stock_material values(:new.stock_id);
+            elsif :old.stock_division = 'goods' then
+                delete from stock_goods where goods_id = :new.stock_id;
+                insert into stock_material values(:new.stock_id);
+            end if;
+        end if;
+        if :new.stock_division = 'goods' then
+            if :old.stock_division = 'product' then
+                delete from stock_product where product_id = :new.stock_id;
+                insert into stock_goods values(:new.stock_id);
+            elsif :old.stock_division = 'material' then
+                delete from stock_material where material_id = :new.stock_id;
+                insert into stock_goods values(:new.stock_id);
+            end if;
+        end if;
+    end if;
+    if deleting then -- 삭제할때
+        if :old.stock_division = 'product' then
+            delete from stock_product where product_id = :old.stock_id;
+        elsif :old.stock_division = 'material' then
+            delete from stock_material where material_id = :old.stock_id;
+        elsif :old.stock_division = 'goods' then
+            delete from stock_goods where goods_id = :old.stock_id;
+        end if;
+    end if;
+end;
+]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>E0F104C0-1472-ABB7-4768-8B0490D3C747</owner>
+<table>58CA7C07-F395-A037-8F72-D46665E503F3</table>
+</TriggerOraclev10g>

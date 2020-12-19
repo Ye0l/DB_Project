@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="PRESET" directorySegmentName="seg_0" id="1764A131-14AD-FF8C-4F11-82033FA1A3B6">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<schemaObject>8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>60969ECF-BC64-C666-88FB-56EB2C5152BE</segment>
+<tableSpace>BF7047EB-5D73-A447-0F60-4A2EB797AE3A</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PRESET_ID" id="10EFAA90-B622-6697-5458-31B393F5A87E">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRESET_NAME" id="48F2CAB0-B78F-736E-C9D0-92332898C59E">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRESET_ID_PK" id="DE2EE3D2-B3F2-CA44-BCAF-122E0B3AE92B">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<schemaObject>8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9</schemaObject>
+<segment>56840F66-3D96-3B64-5E6D-01984FC65549</segment>
+<tableSpace>BF7047EB-5D73-A447-0F60-4A2EB797AE3A</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRESET_ID_PK" id="24755B20-0801-753B-4C7C-345748848B16">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<segment>56840F66-3D96-3B64-5E6D-01984FC65549</segment>
+<tableSpace>BF7047EB-5D73-A447-0F60-4A2EB797AE3A</tableSpace>
+<existingIndex>DE2EE3D2-B3F2-CA44-BCAF-122E0B3AE92B</existingIndex>
+<indexSegment>56840F66-3D96-3B64-5E6D-01984FC65549</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

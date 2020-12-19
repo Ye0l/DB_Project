@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="AF41E989-A53C-BBF6-C6E5-CA040AAF2752" schemaObject="8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9" name="VW_ACCESS">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>VW_ACCESS</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE OR REPLACE VIEW VW_ACCESS
+AS 
+select ac.acc_id, mn.menu_name
+from account ac, menu mn
+where ac.acc_auth <= mn.menu_auth]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ACC_ID" id="363721A9-239D-047C-0CEC-66BB0DD74AFD">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>VW_ACCESS</sourceObjSchema>
+<sourceObjName>ACC_ID</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ACC_ID</alias>
+<dataType>VARCHAR2 (15 BYTE)</dataType>
+<headerAlias>ACC_ID</headerAlias>
+<reference>false</reference>
+<referencedColumn>8353FBD3-AF55-17FC-CE39-6BF94F3DE226</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="MENU_NAME" id="9C6A45A7-06F5-3C1D-7E8A-916CCD3FFEF8">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>VW_ACCESS</sourceObjSchema>
+<sourceObjName>MENU_NAME</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>MENU_NAME</alias>
+<dataType>VARCHAR2 (20 BYTE)</dataType>
+<headerAlias>MENU_NAME</headerAlias>
+<reference>false</reference>
+<referencedColumn>2C1F96B4-CCEC-C8EA-1A4F-1F4530ADD1BE</referencedColumn>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3CAFAA55-6989-FE8A-B605-54CF685B09AA">
+<container>true</container>
+<schema>YEOL</schema>
+<tableName>ACCOUNT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9708D146-7D5A-A6D2-964A-7637256E006E">
+<container>true</container>
+<schema>YEOL</schema>
+<tableName>MENU</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8353FBD3-AF55-17FC-CE39-6BF94F3DE226">
+<columnName>ACC_ID</columnName>
+<schema>YEOL</schema>
+<tableName>ACCOUNT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2C1F96B4-CCEC-C8EA-1A4F-1F4530ADD1BE">
+<columnName>MENU_NAME</columnName>
+<schema>YEOL</schema>
+<tableName>MENU</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8996EB1B-411D-8C33-3370-CAE0CEC69FC2">
+<columnName>MENU_AUTH</columnName>
+<schema>YEOL</schema>
+<tableName>MENU</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0EC995C0-1B36-FD98-343A-54605E70D2FF">
+<columnName>ACC_AUTH</columnName>
+<schema>YEOL</schema>
+<tableName>ACCOUNT</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

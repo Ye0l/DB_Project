@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="5555DC4C-8465-216B-B220-54213BDD903B" mainViewID="F57FD0FB-78F4-72F2-5FBE-A3F44874E228">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:38:44 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

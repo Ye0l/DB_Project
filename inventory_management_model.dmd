@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="inventory_management_model" id="D5E65AFD-FDE2-72D0-B09E-68FA5885606B" version="3.5">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:38:44 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>D5E65AFD-FDE2-72D0-B09E-68FA5885606B</designId>
+</OSDM_Design>

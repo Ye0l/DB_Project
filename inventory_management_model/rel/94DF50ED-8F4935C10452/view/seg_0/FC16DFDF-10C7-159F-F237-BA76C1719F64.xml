@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="FC16DFDF-10C7-159F-F237-BA76C1719F64" schemaObject="8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9" name="VW_PRODUCT">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>VW_PRODUCT</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE OR REPLACE VIEW VW_PRODUCT
+AS 
+select st.stock_id as product_id, st.stock_name as "제품명", st2.stock_id as material_id, st2.stock_name as "원재료명", pr.made_quantity as "필요수량"
+from stock st, stock st2, product pr
+where pr.product_id = st.stock_id and pr.material_id = st2.stock_id
+order by pr.product_id, pr.material_id desc]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PRODUCT_ID" id="3DFBE10B-A356-CEC4-B8D3-6EA84CE31DE9">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>VW_PRODUCT</sourceObjSchema>
+<sourceObjName>PRODUCT_ID</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PRODUCT_ID</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>PRODUCT_ID</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="제품명" id="C35C74EF-A67F-E3CE-FE11-762A6CB2EBC1">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>VW_PRODUCT</sourceObjSchema>
+<sourceObjName>제품명</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>제품명</alias>
+<dataType>VARCHAR2 (30 BYTE)</dataType>
+<headerAlias>제품명</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="MATERIAL_ID" id="AD252FAB-1C27-6387-6492-F8DA04EA6AD6">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>VW_PRODUCT</sourceObjSchema>
+<sourceObjName>MATERIAL_ID</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>MATERIAL_ID</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>MATERIAL_ID</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="원재료명" id="86F6F0E2-2F42-6EE0-E34B-C00DA71E1E8E">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>VW_PRODUCT</sourceObjSchema>
+<sourceObjName>원재료명</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>원재료명</alias>
+<dataType>VARCHAR2 (30 BYTE)</dataType>
+<headerAlias>원재료명</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="필요수량" id="EE41CA96-73AC-5962-A5AE-4789E8BB4C50">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>VW_PRODUCT</sourceObjSchema>
+<sourceObjName>필요수량</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>필요수량</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>필요수량</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="58CA7C07-F395-A037-8F72-D46665E503F3">
+<container>true</container>
+<schema>YEOL</schema>
+<tableName>STOCK</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8EC229A1-2751-9F89-00E8-F689BFC6DDB8">
+<container>true</container>
+<schema>YEOL</schema>
+<tableName>PRODUCT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6307F8F3-3FE0-26F4-397C-22972DA0C369">
+<columnName>STOCK_NAME</columnName>
+<schema>YEOL</schema>
+<tableName>STOCK</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FA9A966D-C440-B59E-F892-D49CC0A91277">
+<columnName>STOCK_ID</columnName>
+<schema>YEOL</schema>
+<tableName>STOCK</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1964FEC6-8805-A0E9-BE61-D2B3A6931768">
+<columnName>MATERIAL_ID</columnName>
+<schema>YEOL</schema>
+<tableName>PRODUCT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8AC32EE7-EE3C-5EE5-18DA-6524085FBD6C">
+<columnName>PRODUCT_ID</columnName>
+<schema>YEOL</schema>
+<tableName>PRODUCT</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E013268D-2BC1-715E-AE10-92515DDB6F3C">
+<columnName>MADE_QUANTITY</columnName>
+<schema>YEOL</schema>
+<tableName>PRODUCT</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

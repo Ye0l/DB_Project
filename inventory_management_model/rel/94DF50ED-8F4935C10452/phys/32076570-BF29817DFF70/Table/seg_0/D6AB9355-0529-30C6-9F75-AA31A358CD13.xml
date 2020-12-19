@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="STOCK_MATERIAL" directorySegmentName="seg_0" id="D6AB9355-0529-30C6-9F75-AA31A358CD13">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<schemaObject>8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>60969ECF-BC64-C666-88FB-56EB2C5152BE</segment>
+<tableSpace>BF7047EB-5D73-A447-0F60-4A2EB797AE3A</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MATERIAL_ID" id="B619367A-3601-3A68-CE45-7AD08388BDF1">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="STOCK_MATERIAL_PK" id="01C7D45A-47AA-37C7-E575-D50AF64A7BF6">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<schemaObject>8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9</schemaObject>
+<segment>56840F66-3D96-3B64-5E6D-01984FC65549</segment>
+<tableSpace>BF7047EB-5D73-A447-0F60-4A2EB797AE3A</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="STOCK_MATERIAL_FK" id="DFDFE33B-25F4-5B51-1470-7BFA27DBFCD1">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:02 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="STOCK_MATERIAL_PK" id="C1F8DE90-BD31-7B66-9489-C599A046F859">
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<segment>56840F66-3D96-3B64-5E6D-01984FC65549</segment>
+<tableSpace>BF7047EB-5D73-A447-0F60-4A2EB797AE3A</tableSpace>
+<existingIndex>01C7D45A-47AA-37C7-E575-D50AF64A7BF6</existingIndex>
+<indexSegment>56840F66-3D96-3B64-5E6D-01984FC65549</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

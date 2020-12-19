@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="YEOL" directorySegmentName="seg_0" id="E0F104C0-1472-ABB7-4768-8B0490D3C747">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjName>YEOL</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:01 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<schemaObject>8890BC6D-8F16-74D6-13A1-A7BDD65BD0C9</schemaObject>
+</UserOraclev10g>

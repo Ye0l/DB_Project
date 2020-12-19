@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="29525CBA-1AC4-EF66-B7F3-A06DB36FBDF4" containerWithKeyObject="8BCA3114-DE07-0152-93CB-00561C0DCE11" localFKIndex="89F0CC62-5D80-6944-C108-D87B0D1DE6D0" name="PRESET_LIST_PRESET_ID_FK">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>PRESET_LIST_PRESET_ID_FK</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:02 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<referredTableLongName>YEOL.PRESET</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1764A131-14AD-FF8C-4F11-82033FA1A3B6</referredTableID>
+<keyObject>24755B20-0801-753B-4C7C-345748848B16</keyObject>
+<referredKeyID>24755B20-0801-753B-4C7C-345748848B16</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PRESET_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

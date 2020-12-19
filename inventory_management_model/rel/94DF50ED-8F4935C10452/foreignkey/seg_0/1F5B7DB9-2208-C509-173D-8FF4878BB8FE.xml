@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1F5B7DB9-2208-C509-173D-8FF4878BB8FE" containerWithKeyObject="B12A9EDB-C572-859D-0473-B5139CF1159E" localFKIndex="BB5A54DD-A63B-EAC7-22E7-B918C2D2D475" name="SUPPLY_MFR_NAME_FK">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>SUPPLY_MFR_NAME_FK</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:02 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<referredTableLongName>YEOL.MANUFACTURER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7C3B13BD-149A-A86A-B54C-91B344832323</referredTableID>
+<keyObject>C514EEE4-0B5B-9440-6BF4-948897B28F5A</keyObject>
+<referredKeyID>C514EEE4-0B5B-9440-6BF4-948897B28F5A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>MFR_NAME</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

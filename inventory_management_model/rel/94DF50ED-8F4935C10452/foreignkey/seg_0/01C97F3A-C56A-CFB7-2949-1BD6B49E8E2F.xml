@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="01C97F3A-C56A-CFB7-2949-1BD6B49E8E2F" containerWithKeyObject="D6AB9355-0529-30C6-9F75-AA31A358CD13" localFKIndex="DFDFE33B-25F4-5B51-1470-7BFA27DBFCD1" name="STOCK_MATERIAL_FK">
+<sourceConnName>Inventory_management</sourceConnName>
+<sourceObjSchema>YEOL</sourceObjSchema>
+<sourceObjName>STOCK_MATERIAL_FK</sourceObjName>
+<createdBy>Administrator</createdBy>
+<createdTime>2020-12-18 05:39:02 UTC</createdTime>
+<ownerDesignName>inventory_management_model</ownerDesignName>
+<referredTableLongName>YEOL.STOCK</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>58CA7C07-F395-A037-8F72-D46665E503F3</referredTableID>
+<keyObject>B5C7836E-7609-7650-154D-4BA3745960D8</keyObject>
+<referredKeyID>B5C7836E-7609-7650-154D-4BA3745960D8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>STOCK_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
